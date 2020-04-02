@@ -40,4 +40,11 @@ button {
   width: 20%;
   float: left;
   cursor: pointer;
+  float: left;
+}
+
+.gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
