@@ -1,4 +1,4 @@
-h1 {
+h1, h2 {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
 }
@@ -21,18 +21,18 @@ body {
   left: 0;
   width: 640px;
   height: 480px;
-  background-color: rgba(0,0,0,0);
 }
 
 button {
   border: 0;
   background: rgba(150,150,150,0.6);
   text-shadow: 1px 1px 1px white;
-  border: 1px solid #999;
+  border: 0px;
   position: absolute;
   cursor: pointer;
   top: 2px;
   left: 2px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .thumb-bar img {
@@ -40,7 +40,6 @@ button {
   width: 20%;
   float: left;
   cursor: pointer;
-  float: left;
 }
 
 .gallery {
