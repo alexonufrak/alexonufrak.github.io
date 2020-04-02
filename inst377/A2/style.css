@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
 }
 
-.full-img {
+.full-img .display-img {
   position: relative;
   display: block;
   width: 640px;
