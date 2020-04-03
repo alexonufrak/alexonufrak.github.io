@@ -17,11 +17,9 @@ for(let i = 1; i <= 5; i++) {
     }
   }
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
+
 btn.onclick = function() {
     const bclass = btn.getAttribute('class');
     if(bclass === 'dark') {
@@ -35,3 +33,4 @@ btn.onclick = function() {
       overlay.style.backgroundColor = 'rgba(0,0,0,0)';
     }
   }
+  
