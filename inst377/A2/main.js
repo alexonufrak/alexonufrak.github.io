@@ -17,10 +17,6 @@ for(let i = 1; i <= 5; i++) {
     }
   }
 
-var imgsize = document.getElementsByClassName('displayed-img');
-imgsize.height = 640;
-imgsoze.width = 480;
-
 
 /* Wiring up the Darken/Lighten button */
 
