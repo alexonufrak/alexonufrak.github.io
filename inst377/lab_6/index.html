@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Forms Lab</title>
+    <title>HTML Forms Lab</title>
+    <link rel="stylesheet" type="text/css" href="form_styles.css">
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <div>
-          <h1>HTML 1 Forms Lab</h1>
+          <h1>HTML Forms Lab</h1>
+
+          <form action="https://nameless-thicket-21836.herokuapp.com/lab" method="post">
+            <ul>
+             <li>
+               <label for="name">Name</label>
+               <input type="text" id="name" name="user_name" maxlength="140">
+             </li>
+             <li>
+               <label for="msg">Interests</label>
+               <textarea rows="5" cols="33" id="msg" name="user_message">by default, this element is filled with text</textarea>
+             </li>
+             <li>
+              <input class='button' type="submit" value="Submit">
+            </li>
+            </ul>
+           </form>
         </div>
       </div>
     </div>

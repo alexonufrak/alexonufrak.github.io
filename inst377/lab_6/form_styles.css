@@ -1,15 +1,67 @@
 form {
-
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
 }
 
 label {
-
+    display: inline-block;
+    margin-top: 15px;
+    width: 90px;
+    text-align: left;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input, textarea {
-    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #a5a5a5;
+    font-size: medium;
 }
 
 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+h1 {
+    float: left;
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #da6262;
+}
+
+textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #da6262;
+}
+
+
+.container {
+    margin: auto;
+    width: 50%;
+    
+}
+
+.button {
+    background-color: #da6262;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
 }
