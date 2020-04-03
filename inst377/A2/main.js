@@ -14,6 +14,9 @@ for(let i = 1; i <= 5; i++) {
     thumbBar.appendChild(newImage);
     newImage.onclick = function(replace) {
       displayedImage.src = replace.target.src;
+      var imgsize = document.getElementsByClassName('displayed-img');
+      imgsize.height = 640;
+      imgsoze.width = 480;
     }
   }
 
