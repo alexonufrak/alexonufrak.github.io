@@ -21,13 +21,37 @@
       <div class="wrapper">
         <div class="header">Frontend Libraries: Maps Lab</div>
         <div class="content">
-          When your lab is done, this should be replaced with a stylish map.
+          <div id="mapid" style="width: 500px; height: 350px;"></div>
         </div>
-        <div class="footer">Make some markers work!</div>
+        <div class="footer"><strike>Make some markers work!</strike> Working markers!</div>
       </div>
     </div>
     <script>
-        /* Your lab code can go here, or in an external file you include */
+        var mymap = L.map('mapid').setView([38.987794, -76.939915], 12);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 36,
+          id: 'mapbox/streets-v11',
+          tileSize: 512,
+          zoomOffset: -1,
+          accessToken: 'pk.eyJ1IjoiYW9udWZyYWsiLCJhIjoiY2s4bnZndDRnMTJoYTNmbzJ1dHFoZnZqbiJ9._W2k2gEOokLVjhFccVOqEQ'
+        }).addTo(mymap);
+        var inspection_x = [39.014023, 38.980115, 38.980544];
+        var inspection_y = [-76.927881, -76.937981, -76.937981];
+
+        var hornbake_marker = L.marker([38.9881362,-76.9437549]).addTo(mymap);
+        var eppley_marker = L.marker([38.9936034,-76.9473623]).addTo(mymap);
+        var mckeldin_marker = L.marker([38.9859704,-76.9472769]).addTo(mymap);
+        var ihop_marker = L.marker([inspection_x[0],inspection_y[0]]).addTo(mymap);
+        var starbucks_marker = L.marker([inspection_x[1], inspection_y[1]]).addTo(mymap);
+        var deli_marker = L.marker([inspection_x[2], inspection_y[2]]).addTo(mymap);
+
+        hornbake_marker.bindPopup("<b>Hornbake Library</b>")
+        eppley_marker.bindPopup("<b>Eppley Rec Centre</b>")
+        mckeldin_marker.bindPopup("<b>McKeldin Library</b>")
+        ihop_marker.bindPopup("<b>iHop</b>")
+        starbucks_marker.bindPopup("<b>Starbucks</b>")
+        deli_marker.bindPopup("<b>Jason's Deli</b>")
     </script>
   </body>
 </html>
